@@ -10,7 +10,7 @@ Noti is a open-source note taking and documentation webapp!
 - Export to:
   - Markdown File
   - Github
-- Import fro:
+- Import from:
   - Local File
   - Github
  
