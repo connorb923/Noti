@@ -1,0 +1,33 @@
+/*
+ Colorscheme from https://nordtheme.com 
+ Remember to use light-dark()
+*/
+
+* {
+    --bg0 : #2e3440;
+    --bg1 : #3b4352;
+    --bg2 : #434c5e;
+    --bg3 : #4c566a;
+    --fg0 : #d8dee9;
+    --fg1 : #e5e9f0;
+    --fg2 : #eceff4;
+
+    --red  : #bf616a;
+    --green: #a3be8c;
+    --yellow: #ebcb8b;
+    --blue : #81a1c1;
+    --purple: #b48ead;
+    --cyan : #88c0d0;
+    --white: #e5e9f0;
+    --black: #4c566a;
+    --orange: #d08770;
+
+    background-color: light-dark(var(--fg2), var(--bg0));
+    color: light-dark(var(--bg0), var(--fg2));
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+/* General */
