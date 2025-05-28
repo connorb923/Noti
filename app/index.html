@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Notes | Noti</title>
+    <meta name="description" content="Noti is an open source notetaking and documentation creating webapp!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/projects.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://www.mozilla.org/en-US/firefox/new/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+    <div class="notes">
+        <h1> My Notes </h1>
+        <div class="notesContainer">
+            <div class="note">
+                <h2> Note Title </h2>
+                <h4> 1/1/2025 </h4>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, laboriosam perspiciatis. Aspernatur, ipsum similique nisi delectus labore accusantium nesciunt veritatis sunt earum placeat nobis impedit officia velit itaque excepturi modi? </p>
+            </div>
+            <button id="addNote">Add Note</button>
+
+        </div>
+    </div>
+    <div class="notes" id="newNote" style="display: none;">
+        <h1> New Note </h1>
+        <div class="notesContainer">
+            <h2> New Note Title: </h2>
+            <input type="text" id="noteTitle" placeholder="Enter note title here...">
+            <h4 id="todaysDate"> Today's Date</h4>
+            <p> Content </p>
+            <textarea id="noteContent" rows="20" cols="50"> </textarea></br></br>
+        </div>
+        <button id="saveNote">Save Note</button>
+
+    </div>
+    <script src="../js/index.js" async defer></script>
+</body>
+
+</html>

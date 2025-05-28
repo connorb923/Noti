@@ -1,28 +1,18 @@
 # Noti 📒
 
-Noti is a open-source note taking and documentation webapp!
+Noti is your open-source permanent note solution!
 
 ## Features
 
 - Local storage saving
-- Wysiwyg editing
-- Raw markdown editing
-- Export to:
-  - Markdown File
-  - Github
-- Import from:
-  - Local File
-  - Github
+- Export notes list as markdown
  
 ## Todo
 
 - [x] Create Readme
-- [ ] Set up branding
-- [ ] Build out HTML
-- [ ] Build out CSS
+- [X] Set up branding
+- [X] Build out HTML
+- [X] Build out CSS
 - [ ] Start Javascript
-  - [ ] Create basic editing
+  - [X] Create basic editing
   - [ ] Set up Saving/Loading (Local)
-  - [ ] Set up Github Intergration (Maybe not now)
-  - [ ] Set up Saving/Loading from Github
-- [ ] Create projects (Folders) 

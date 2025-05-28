@@ -1,0 +1,109 @@
+/*
+ Colorscheme from https://nordtheme.com 
+ Remember to use light-dark()
+ dark goes ---> dark - light
+ light goes ---> light - dark
+*/
+
+:root {
+  color-scheme: light dark;
+
+  --bg0: rgb(46, 52, 64);
+  --bg1: rgb(59, 67, 82);
+  --bg2: rgb(67, 76, 94);
+  --bg3: rgb(76, 86, 106);
+  --fg0: rgb(216, 222, 233);
+  --fg1: rgb(229, 233, 240);
+  --fg2: rgb(236, 239, 244);
+
+  --red: rgb(191, 97, 106);
+  --green: rgb(163, 190, 140);
+  --yellow: rgb(235, 203, 139);
+  --blue: rgb(129, 161, 193);
+  --purple: rgb(180, 142, 173);
+  --cyan: rgb(136, 192, 208);
+  --white: rgb(229, 233, 240);
+  --black: rgb(76, 86, 106);
+  --orange: rgb(208, 135, 112);
+}
+
+body {
+  background-color: light-dark(var(--fg2), var(--bg0));
+  background:
+    linear-gradient(light-dark(rgba(229, 233, 240,0.6), rgba(59, 67, 82, 0.6)), light-dark(rgba(236,239,244,0.6), rgba(59, 67, 82, 0.6))),
+    url(../media/images/background.jpeg) no-repeat center;
+  background-size: cover;
+  color: light-dark(var(--bg0), var(--fg2));
+
+  font-family: 'Fira Code', 'Fira Mono', 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: center;
+  min-height: 60%;
+  margin: 0;
+  padding: 0;
+}
+
+/* General */
+
+img {
+  object-fit: cover;
+  object-position: center;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+div.welcome {
+  background:
+    linear-gradient(light-dark(rgba(229, 233, 240,0.8), rgba(46, 52, 64, 0.8)), light-dark(rgba(229, 233, 240,0.8), rgba(46, 52, 64, 0.8))),
+    url(../media/images/background.jpeg) no-repeat center;
+  background-size: cover;
+  padding: 20px;
+  margin: 10px auto;
+  border: 5px solid light-dark(var(--bg0), var(--fg2));
+  width: 100%;
+  max-width: 60vw;
+  box-sizing: border-box;
+}
+
+div.welcome a {
+  background-color: light-dark(var(--fg0), var(--bg2));
+  color: var(--blue);
+  font-size: 1em;
+  padding: 10px 18px;
+  border: 2.5px solid light-dark(var(--bg0), var(--fg2));
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.2s, border 0.2s, color 0.2s;
+  margin: 8px 0;
+  word-break: break-word;
+}
+
+div.welcome a:hover {
+  background-color: light-dark(var(--fg1), var(--bg1));
+  border: 2.5px solid light-dark(var(--bg0), var(--fg2));
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 1em;
+    padding: 0 5px;
+  }
+
+  div.welcome {
+    padding: 12px;
+    margin: 10px auto;
+    width: 98%;
+    max-width: 100%;
+    border-width: 5px;
+  }
+
+  div.welcome a {
+    font-size: 0.95em;
+    padding: 8px 10px;
+  }
+}
